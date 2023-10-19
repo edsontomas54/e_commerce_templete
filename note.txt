@@ -1,0 +1,34 @@
+case "CaboDelgado":
+distMoz = distMoz.concat(["Ancuabe","Balama","Chiúre","Ibo","Macomia","Mecúfi","Meluco","Metuge","Mocímboa da Praia","Montepuez","Mueda","Muidumbe","Namuno","Nangade","Palma","Pemba","Quissanga"]);
+break;
+case "Niassa":
+distMoz = distMoz.concat(["Ancuabe","Balama","Chiúre","Ibo","Macomia","Mecúfi","Meluco","Metuge","Mocímboa da Praia","Montepuez","Mueda","Muidumbe","Namuno","Nangade","Palma","Pemba","Quissanga"]);
+break;
+case "Nampula":
+distMoz = distMoz.concat(["Angoche","Eráti","ManhIlha de Moçambiqueiça","Lalaua","Matutuíne","Liúpo","Malema","Meconta","Mecubúri","Memba","Mogincual","Mogovolas","Moma","Monapo","Mossuril","Muecate","Murrupula","Nacala-a-Velha","Nacala Porto","Nacarôa","Nampula","Rapale","Ribaué"]);
+break;
+
+case "Tete":
+distMoz = distMoz.concat(["Angónia","Cahora-Bassa","Changara","Chifunde","Chiuta","Matutuíne","Dôa","Macanga","Magoé","Marara","Marávia","Marávia","Marávia","Mutarara","Tete","Tsangano","Zumbo",]);
+break;
+case "Zambezia":
+distMoz = distMoz.concat(["Alto Molócue","Chinde","Derre","Gilé","Gurué","Ile","Inhassunge","Luabo","Magude","Lugela","Maganja da Costa","Milange","Mocuba","Mocubela","Molumbo","Mopeia","Morrumbala","Mulevala","Namacurra","Namarroi","Nicoadala","Pebane","Quelimane",]);
+break;
+case "Manica":
+distMoz = distMoz.concat(["Bárue","Chimoio","Macate","Gondola","Guro","Machaze","Macossa","Manica","Mossurize","Sussundenga","Tambara","Vanduzi",]);
+break;
+case "Sofala":
+distMoz = distMoz.concat(["Beira","Búzi","Caia","Chemba","Cheringoma","Chibabava","Dondo","Gorongosa","Machanga","Nhamatanda","Muanza","Marromeu","Maringué",]);
+break;
+case "Inhambane":
+distMoz = distMoz.concat(["Funhalouro","Govuro","Homoíne","Inhambane","Inharrime","Inhassoro","Jangamo","Mabote","Massinga","Maxixe","Morrumbene","Panda","Vilanculos","Zavala",]);
+break;
+case "Gaza":
+distMoz = distMoz.concat(["Chibuto","Chicualacuala","Chigubo","Chókwè","Mapai","Bilene","Massangena","Massingir","Chongoene","Guijá","Mabalane","Manjacaze","Xai-Xai",]);
+break;
+case "Maputo":
+distMoz = distMoz.concat(["Boane","Magude","Manhiça","Marracuene","Matola","Matutuíne","Moamba","Namaacha",]);
+break;
+case "Cidade":
+distMoz = distMoz.concat(["Distrito Urbano de KaMpfumo","Distrito Urbano de Nlhamankulu","Distrito Urbano de KaMaxaquene","Distrito Urbano de KaMavota","Distrito Urbano de KaMubukwana","Distrito Municipal de KaTembe","Distrito Municipal de KaNyaka",]);
+break;
