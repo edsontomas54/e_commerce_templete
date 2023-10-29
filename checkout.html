@@ -594,11 +594,12 @@
                         </div>
                         <form method="post">
                             <div class="form-group">
-                                <label class="col-md-0 control-label" >First name</label>
-                                <input type="text" required="" placeholder="First name *" wire:model='firstName'>
+                                <label class="col-md-0 control-label">First name<span class="text-danger">*</span></label>
+                                <input type="text" required="" placeholder="First name " wire:model='firstName'>
                             </div>
                             <div class="form-group">
-                                <input type="text" required="" placeholder="Last name *" wire:model='lastName'>
+                                <label class="col-md-0 control-label">Last name<span class="text-danger">*</span></label>
+                                <input type="text" required="" placeholder="Last name " wire:model='lastName'>
                             </div>
                             <div class="form-group">
                                 <div class="form-group">
@@ -608,13 +609,15 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-md-0 control-label">Destritos <span class="text-danger">*</span></label>
                                 <input type="text" required="" placeholder="Address *">
                             </div>
                             <div class="form-group">
                                 <input type="text"  required="" placeholder="Address line2">
                             </div>
                             <div class="form-group">
-                                <label class="col-md-0 control-label" >Provincia</label>
+                                <label class="col-md-0 control-label">Provincia<span class="text-danger">*</span></label>
+                                   
                                 <select class="form-control input-md"  wire:model='province'>
                                     <option selected>Selecione a Provincia</option>
                                     <option value="CaboDelgado">Cabo Delgado</option>
@@ -631,9 +634,10 @@
                                 </select>
                             </div>
                             <!-- {{-- Maputo Provincia districs  --}} -->
-
+                            
                                 <div class="form-group">
-                                    <label class="col-md-0 control-label" >Distritos</label>
+                                    <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
                                     <select class="form-control input-md"  wire:model='district'>
                                         <option selected>Selecione a District</option>
                                         <option value="boane">Boane</option>
@@ -649,10 +653,10 @@
                            
 
                             <!-- {{-- Maputo Cidade districs  --}} -->
-
-                           
+                                
                                 <div class="form-group">
-                                    <label class="col-md-0 control-label">Distritos</label>
+                                    <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
                                     <select class="form-control input-md"  wire:model='district'>
                                         <option selected>Selecione a District</option>
                                         <option value="cmKampfumo">Distrito Urbano de KaMpfumo</option>
@@ -665,30 +669,287 @@
                                     </select>
                                 </div>
                            
-                            <!-- {{-- Gaza districs  --}}  -->
+                         
+                             <!-- Destricts cabodelgado -->
                             <div class="form-group">
-                                <label class="col-md-0 control-label" >Distritos</label>
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                               
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Ancuabe">Ancuabe</option>
+                                    <option value="Balama">Balama</option>
+                                    <option value="Chiúre">Chiúre</option>
+                                    <option value="Ibo">Ibo</option>
+                                    <option value="Macomia">Macomia</option>
+                                    <option value="Mecúfi">Mecúfi</option>
+                                    <option value="Meluco">Meluco</option>
+                                    <option value="Metuge">Metuge</option>
+                                    <option value="Mocímboa da Praia">Mocímboa da Praia</option>
+                                    <option value="Montepuez">Montepuez</option>
+                                    <option value="Mueda">Mueda</option>
+
+                                </select>
+                            </div>
+                           
+                            <!-- destritc Niassa -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                               
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Lago">Lago</option>
+                                    <option value="Sanga">Sanga</option>
+                                    <option value="Chimbunila">Chimbunila</option>
+                                    <option value="Cidade de Lichinga">Cidade de Lichinga</option>
+                                    <option value="Nguna">Nguna</option>
+                                    <option value="Mandimba">Mandimba</option>
+                                    <option value="Mavago">Mavago</option>
+                                    <option value="Muembe">Muembe</option>
+                                    <option value="Majune">Majune</option>
+                                    <option value="Marrupa">Marrupa</option>
+                                    <option value="Cuamba">Cuamba</option>
+                                    <option value="Metárica">Metárica</option>
+                                    <option value="Maúa">Maúa</option>
+                                    <option value="Nipepe">Nipepe</option>
+                                    <option value="Mecanhelas">Mecanhelas</option>
+
+                                </select>
+                            </div>
+
+                            <!-- destrict nampula -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Angoche">Angoche</option>
+                                    <option value="Eráti">Eráti</option>
+                                    <option value="ManhIlha de Moçambiqueiça">ManhIlha de Moçambiqueiça</option>
+                                    <option value="Lalaua">Lalaua/option>
+                                    <option value="Matutuíne">Matutuíne</option>
+                                    <option value="Liúpo">Liúpo</option>
+                                    <option value="Malema">Malema</option>
+                                    <option value="Meconta">Meconta</option>
+                                    <option value="Memba">Mecubúri</option>
+                                    <option value="Mogincual">Mogincual</option>
+                                    <option value="Mogovolas">Mogovolas</option>
+                                    <option value="Moma">Moma</option>
+                                    <option value="Monapo">Monapo</option>
+                                    <option value="Mossuril">Mossuril</option>
+                                    <option value="Muecate">Muecate</option>
+                                    <option value="Murrupula">Murrupula</option>
+                                    <option value="Nacala-a-Velha">Nacala-a-Velha</option>
+                                    <option value="Nacarôa">Nacarôa</option>
+                                    <option value="Nampula">Nampula</option>
+                                    <option value="Rapale">Rapale</option>
+                                    <option value="Ribaué">Ribaué</option>
+
+                                </select>
+                            </div>
+
+                            <!-- destrict tete -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Angónia">Angónia</option>
+                                    <option value="Cahora-Bassa">Cahora-Bassa</option>
+                                    <option value="Changara">Changara</option>
+                                    <option value="Chifunde">Chifunde/option>
+                                    <option value="Chiuta">Chiuta</option>
+                                    <option value="Matutuíne">Matutuíne</option>
+                                    <option value="Dôa">Dôa</option>
+                                    <option value="Macanga">Macanga</option>
+                                    <option value="Magoé">Magoé</option>
+                                    <option value="Marávia">Marávia</option>
+                                    <option value="Mutarara">Mutarara</option>
+                                    <option value="Tete">Tete</option>
+                                    <option value="Tsangano">Tsangano</option>
+                                    <option value="Zumbo">Zumbo</option>
+                            
+                                </select>
+                            </div>
+                           
+                            <!-- destrict zambezia -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Alto Molócue">Alto Molócue</option>
+                                    <option value="Chinde">Chinde</option>
+                                    <option value="Derre">Derre</option>
+                                    <option value="Gilé">Gilé/option>
+                                    <option value="Gurué">Gurué</option>
+                                    <option value="Ile">Ile</option>
+                                    <option value="Inhassunge">Inhassunge</option>
+                                    <option value="Luabo">Luabo</option>
+                                    <option value="Magude">Magude</option>
+                                    <option value="Lugela">Lugela</option>
+                                    <option value="Maganja da Costa">Maganja da Costa</option>
+                                    <option value="Milange">Milange</option>
+                                    <option value="Mocuba">Mocuba</option>
+                                    <option value="Mocubela">Mocubela</option>
+                                    <option value="Molumbo">Molumbo</option>
+                                    <option value="Mopeia">Mopeia</option>
+                                    <option value="Morrumbala">Morrumbala</option>
+                                    <option value="Mulevala">Mulevala</option>
+                                    <option value="Namacurra">Namacurra</option>
+                                    <option value="Namarroi">Namarroi</option>
+                                    <option value="Nicoadala">Nicoadala</option>
+                                    <option value="Pebane">Pebane</option>
+                                    <option value="Quelimane">Quelimane</option>                                   
+                            
+                                </select>
+                            </div>
+
+                            <!-- destrict Manica -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Bárue">Bárue</option>
+                                    <option value="Chimoio">Chimoio</option>
+                                    <option value="Macate">Macate</option>
+                                    <option value="Gondola">Gondola/option>
+                                    <option value="Gurué">Gurué</option>
+                                    <option value="Guro">Guro</option>
+                                    <option value="Machaze">Machaze</option>
+                                    <option value="Macossa">Macossa</option>
+                                    <option value="Manica">Manica</option>
+                                    <option value="Mossurize">Mossurize</option>
+                                    <option value="Sussundenga">Sussundenga</option>
+                                    <option value="Tambara">Tambara</option>
+                                    <option value="Vanduzi">Vanduzi</option>
+                                  
+                                </select>
+                            </div>
+
+                            <!-- destrict sofala -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Beira">Beira</option>
+                                    <option value="Búzi">Búzi</option>
+                                    <option value="Caia">Caia</option>
+                                    <option value="Chemba">Chemba/option>
+                                    <option value="Cheringoma">Cheringoma</option>
+                                    <option value="Chibabava">Chibabava</option>
+                                    <option value="Dondo">Dondo</option>
+                                    <option value="Gorongosa">Gorongosa</option>
+                                    <option value="Machanga">Machanga</option>
+                                    <option value="Nhamatanda">Nhamatanda</option>
+                                    <option value="Muanza">Muanza</option>
+                                    <option value="Marromeu">Marromeu</option>
+                                    <option value="Maringué">Maringué</option>
+                                  
+                                </select>
+                            </div>
+
+                            <!-- destrict inhambane -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Funhalouro">Funhalouro</option>
+                                    <option value="Govuro">Govuro</option>
+                                    <option value="Homoíne">Homoíne</option>
+                                    <option value="Inhambane">Inhambane/option>
+                                    <option value="Inharrime">Inharrime</option>
+                                    <option value="Inhassoro">Inhassoro</option>
+                                    <option value="Jangamo">Jangamo</option>
+                                    <option value="Mabote">Mabote</option>
+                                    <option value="Massinga">Massinga</option>
+                                    <option value="Maxixe">Maxixe</option>
+                                    <option value="Morrumbene">Morrumbene</option>
+                                    <option value="Panda">Panda</option>
+                                    <option value="Vilanculos">Vilanculos</option>
+                                    <option value="Zavala">Zavala</option>
+                                  
+                                </select>
+                            </div>
+
+
+                                   <!-- {{-- Gaza districs  --}}  -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
                                 <select class="form-control input-md"  wire:model='district'>
                                     <option selected>Selecione a District</option>
                                     <option value="chibuto">Chibuto</option>
                                     <option value="chicualacuala">Chicualacuala</option>
                                     <option value="chokwe">Chókwè</option>
-                                    <option value="marracuene">Marracuene</option>
-                                    <option value="matola">Matola</option>
-                                    <option value="matutuine">Matutuíne</option>
-                                    <option value="moamba">Moamba</option>
-                                    <option value="namaacha">Namaacha</option>
+                                    <option value="Mapai">Mapai</option>
+                                    <option value="Bilene">Bilene</option>
+                                    <option value="Massangena">Massangena</option>
+                                    <option value="Chongoene">Chongoene</option>
+                                    <option value="Guijá">Guijá</option>
+                                    <option value="Mabalane">Mabalane</option>
+                                    <option value="Manjacaze">Manjacaze</option>
+                                    <option value="Manjacaze">Manjacaze</option>
+
                                 </select>
                             </div>
+
+                            <!-- destrict Maputo -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Boane">Boane</option>
+                                    <option value="Magude">Magude</option>
+                                    <option value="Manhiça">Manhiça</option>
+                                    <option value="Marracuene">Marracuene/option>
+                                    <option value="Matola">Matola</option>
+                                    <option value="Matutuíne">Matutuíne</option>
+                                    <option value="Moamba">Moamba</option>
+                                    <option value="Namaacha">Namaacha</option>                                   
+                                  
+                                </select>
+                            </div>
+
+                            <!-- destrict inhambane -->
+                            <div class="form-group">
+                                <label class="col-md-0 control-label">Distritos<span class="text-danger">*</span></label>
+                                   
+                                <select class="form-control input-md"  wire:model='district'>
+                                    <option selected>Selecione a District</option>
+                                    <option value="Funhalouro">Funhalouro</option>
+                                    <option value="Govuro">Govuro</option>
+                                    <option value="Homoíne">Homoíne</option>
+                                    <option value="Inhambane">Inhambane/option>
+                                    <option value="Inharrime">Inharrime</option>
+                                    <option value="Inhassoro">Inhassoro</option>
+                                    <option value="Jangamo">Jangamo</option>
+                                    <option value="Mabote">Mabote</option>
+                                    <option value="Massinga">Massinga</option>
+                                    <option value="Maxixe">Maxixe</option>
+                                    <option value="Morrumbene">Morrumbene</option>
+                                    <option value="Panda">Panda</option>
+                                    <option value="Vilanculos">Vilanculos</option>
+                                    <option value="Zavala">Zavala</option>
+                                  
+                                </select>
+                            </div>
+
                            
+
                             <div class="form-group">
                                 <input required="" type="text" name="zipcode" placeholder="Postcode / ZIP *">
                             </div>
                             <div class="form-group">
+                                <label class="col-md-0 control-label">Phone<span class="text-danger">*</span></label>
                                 <input required="" type="text" name="phone" placeholder="Phone *">
                             </div>
                             <div class="form-group">
-                                <input required="" type="text" name="email" placeholder="Email address *">
+                                <label class="col-md-0 control-label">Email address <span class="text-danger">*</span></label>
+                                <input required="" type="text" name="email" placeholder="Email address ">
                             </div>
                             <div class="form-group">
                                 <div class="checkbox">
@@ -712,10 +973,13 @@
                                 </div>
                                 <div id="collapseAddress" class="different_address collapse in">
                                     <div class="form-group">
-                                        <input type="text" required="" name="fname" placeholder="First name *">
+                                        <label class="col-md-0 control-label">First name<span class="text-danger">*</span></label>
+                                   
+                                        <input type="text" required="" name="fname" placeholder="First name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" required="" name="lname" placeholder="Last name *">
+                                        <label class="col-md-0 control-label">Last name <span class="text-danger">*</span></label>
+                                        <input type="text" required="" name="lname" placeholder="Last name">
                                     </div>
                                     <div class="form-group">
                                         <input required="" type="text" name="cname" placeholder="Company Name">
@@ -725,7 +989,8 @@
                                         <input required="" disabled type="text" name="country" placeholder="Country" value="Mocambique">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="billing_address" required="" placeholder="Address *">
+                                        <label class="col-md-0 control-label">Address <span class="text-danger">*</span></label>
+                                        <input type="text" name="billing_address" required="" placeholder="Address ">
                                     </div>
                                     <div class="form-group">
                                         <input type="text" name="billing_address2" required="" placeholder="Address line2">
@@ -783,6 +1048,7 @@
                                             <td>$35.00</td>
                                         </tr>
                                         <tr>
+                                            
                                             <th>SubTotal</th>
                                             <td class="product-subtotal" colspan="2">$280.00</td>
                                         </tr>
